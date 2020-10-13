@@ -16,22 +16,15 @@ function App() {
     error: ""
   });
 
-  async function handleSubmit (e, data, { reset }) {
+  async function handleSubmit (data, { reset }) {
     try {
-      
-      
       const { username, email, password } = state;
-      // e.preventDefault();
-      
+        // e.preventDefault()
       const schema = Yup.object().shape({
         name: Yup.string().required('O nome é obrigatório'),
-        email: Yup.string()
-                  .email('Digite um e-mail válido')
-                  .required('O e-mail é obrigatório'),
-        password: Yup.string().min(10, 'No mínimo 10 caracteres')
-                     .required('A senha é obrigatória'),
-        passwordConfirmation: Yup.string().oneOf([Yup.ref('password'), null], 'As senhas devem coincidir')
-                                 .required('A confirmação de senha é obrigatória')
+        email: Yup.string().email('Digite um e-mail válido').required('O e-mail é obrigatório'),
+        password: Yup.string().min(10, 'No mínimo 10 caracteres').required('A senha é obrigatória'),
+        passwordConfirmation: Yup.string().oneOf([Yup.ref('password'), null], 'As senhas devem coincidir').required('A confirmação de senha é obrigatória')
         
     })
     
