@@ -1,0 +1,62 @@
+:root {
+
+    font-size: 60%;
+    
+    --color-background-back: #ffffff;
+    --color-background: #6517AF;
+    --color-logo-color: #ddcced;
+    --color-text: #ecc8c8;
+    --color-text-in-box: #AC87D0;
+
+    --color-button-signUp-home:  #9E4FE9;
+    --color-button-login-home: #72DF00;
+    --color-button-signUp-home-dark:  #8b2de2;
+    --color-button-login-home-dark: #57a800;
+    --color-button-signUp:  #9E4FE9;
+    --color-button-login: #72DF00;
+    --color-button-signUp-dark:  #8b2de2;
+    --color-button-login-dark: #57a800;
+
+    --color-icons: #6517AF;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+    
+}
+
+body {
+    background: var(--color-background);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Aglet Sans;
+}
+
+.container {
+    width: 90vw;
+    max-width: 700px;
+
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}

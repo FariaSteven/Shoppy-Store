@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+    font: Aglet Sans;
+  }
+  
+  
+  .App {
+    text-align: center;
+    font: Aglet Sans;
+    
+    color: #ffffff;
+  }
+  
+  .App h1 {
+    font: Aglet Sans;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .input {
+    width: 315px;
+    height: 44px;
+    background: #eeeeee;
+    border-radius: 8px;
+    font: Aglet Sans;
+  
+    border: 0 none;
+  
+    outline: none;
+    
+    margin-bottom: 22px;
+  }
+  
+  .input:focus-within {
+    border-bottom: 2px solid #72DF00;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: center;
+    color: var(--color-text-in-box);
+  }
+  
+  .button-signUp button{
+    width: 315px;
+    height: 44px;
+
+    background: var(--color-button-login);
+    color: var(--color-background-back);
+
+    box-shadow: none;
+    border: 0;
+    outline: none;
+
+    border-radius: 0.8rem;
+
+    margin-top: 2.0rem;
+  }
+  
+  .button-login button{
+    width: 315px;
+    height: 44px;
+
+    background: var(--color-button-signUp);
+    color: var(--color-background-back);
+
+    box-shadow: none;
+    border: 0;
+    outline: none;
+
+    border-radius: 0.8rem;
+    
+    cursor: pointer;
+
+    transition: background 0.4s;
+  }
+  
+  .button-login button:hover {
+    background: var(--color-button-signUp-dark);
+  }
+
+  #button-signUp button:hover{
+    background: var(--color-button-login-dark);
+  }
